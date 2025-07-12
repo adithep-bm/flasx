@@ -1,13 +1,15 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
+import decimal
+from . import receivers
 
 router = APIRouter(prefix="/items", tags=["items"])
 
 
 class Item(BaseModel):
     name: str
-    price: float
-    is_offer: bool = False
+    delivery_price: decimal.Decimal = 0.0
+    receiver: receivers.Receiver
 
 
 @router.get("", summary="Get all items")
