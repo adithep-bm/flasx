@@ -1,12 +1,12 @@
 [project]
 name = "flasx"
 version = "0.1.0"
-description = "This flasx project is for example in PSU mobile development class in 1/2568 semester."
+description = ""
 authors = [
     {name = "adithep.b",email = "adithepbaebmueann@gmail.com"}
 ]
 readme = "README.md"
-requires-python = "3.13"
+requires-python = ">=3.13"
 dependencies = [
 ]
 
